@@ -15,7 +15,7 @@ class SplashView extends StatelessWidget {
           onEnd: () {
             debugPrint("On End");
           },
-          childWidget:  Image.asset("assets/images/splashh.png"),
+          childWidget:  Image.asset("assets/images/splash.png"),
           onAnimationEnd: () => debugPrint("On Fade In End"),
           nextScreen:  const StartScreen(),
         );

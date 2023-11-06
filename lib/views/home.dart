@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
     ),  child: SafeArea(
       child: Column(
         children: [
-          const SizedBox(height: 70,),
+          const SizedBox(height: 40,),
           Text("It's $activePlayer's Turn",
           style: const TextStyle(
             fontSize: 40,
@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
             fontWeight: FontWeight.bold,
             color: Color.fromARGB(255, 229, 220, 116),
           ),),
-          const SizedBox(height:45 ,),
+          const SizedBox(height:40 ,),
           SizedBox(
             width: double.infinity,
             height: 320.0,
@@ -124,7 +124,6 @@ class _HomePageState extends State<HomePage> {
                     child: Image.asset("assets/icons/pairGamers.png",),
                   ),
                 )),
-              
               IconButton(
                 style: ButtonStyle(
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -155,11 +154,12 @@ class _HomePageState extends State<HomePage> {
                 ),)
             ],
           ),
+          const SizedBox(height: 20,),
           Text('$result ',
           style: const TextStyle(
-            fontSize: 20,
+            fontSize: 25,
             fontWeight: FontWeight.bold,
-            color: Colors.white,
+            color: Color.fromARGB(255, 229, 220, 116),
           ),),
         ],
       )),
