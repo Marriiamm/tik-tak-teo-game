@@ -19,7 +19,7 @@ class StartScreen extends StatelessWidget {
             padding: EdgeInsets.only(top:280.0),
             child: Directionality(
               textDirection: TextDirection.rtl,
-              child: buttonOne())),
+              child: ButtonOne())),
         ),
       ),
     );
@@ -27,8 +27,8 @@ class StartScreen extends StatelessWidget {
 }
 
 
-class buttonOne extends StatelessWidget {
-  const buttonOne({
+class ButtonOne extends StatelessWidget {
+  const ButtonOne({
     super.key,
   });
 
@@ -46,7 +46,7 @@ class buttonOne extends StatelessWidget {
       onPressed: (){
         Navigator.push(context, MaterialPageRoute(
           builder: (context){
-            return  HomePage();
+            return  const HomePage();
           }));
       }, 
        

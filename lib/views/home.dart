@@ -3,7 +3,7 @@ import 'package:tik_tak_game/game.dart';
 
 // ignore: must_be_immutable
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
             color: Color.fromARGB(255, 229, 220, 116),
           ),),
           const SizedBox(height:45 ,),
-          Container(
+          SizedBox(
             width: double.infinity,
             height: 320.0,
             child: GridView.count(
